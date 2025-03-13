@@ -50,6 +50,11 @@ const Navbar = () => {
     { name: 'Contacto', href: '#contact' },
   ];
 
+  // Define text color classes based on scroll state
+  const textColorClass = scrolled 
+    ? "text-slate-800 hover:text-primary" 
+    : "text-white/90 hover:text-white";
+
   return (
     <nav 
       className={cn(
@@ -73,7 +78,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white/90 hover:text-white font-medium nav-link px-1 py-2"
+                className={`${textColorClass} font-medium nav-link px-1 py-2`}
                 onClick={closeMenu}
               >
                 {link.name}
@@ -84,7 +89,7 @@ const Navbar = () => {
             <div className="relative" ref={servicesRef}>
               <button 
                 onClick={toggleServices}
-                className="flex items-center text-white/90 hover:text-white font-medium px-1 py-2 focus:outline-none"
+                className={`flex items-center ${textColorClass} font-medium px-1 py-2 focus:outline-none`}
               >
                 Servicios
                 <ChevronDown 
@@ -125,7 +130,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden text-white/90 hover:text-white"
+            className={`md:hidden ${textColorClass}`}
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
