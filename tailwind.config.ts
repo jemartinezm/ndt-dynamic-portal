@@ -30,15 +30,15 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: '#004494',
+          DEFAULT: '#1E3A8A', // Changed to a darker blue
           foreground: '#FFFFFF'
         },
         secondary: {
-          DEFAULT: '#6F7D8C',
+          DEFAULT: '#475569',
           foreground: '#FFFFFF'
         },
         accent: {
-          DEFAULT: '#3A6EA5',
+          DEFAULT: '#2563EB',
           foreground: '#FFFFFF'
         },
         muted: {
