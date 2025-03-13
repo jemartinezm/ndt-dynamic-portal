@@ -90,7 +90,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+      <div className="absolute bottom-6 left-0 right-0 flex justify-center animate-bounce">
         <a href="#services" className="flex flex-col items-center text-blue-300 hover:text-blue-200">
           <span className="text-sm font-medium mb-1">Descubre más</span>
           <ChevronDown size={20} />
